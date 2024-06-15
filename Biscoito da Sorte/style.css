@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+    background-color: white;
+    width: 42.4rem;
+    height: 42.4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.6rem 1rem 0.6rem rgba(0, 0, 0, 0.5);
+}
+
+.screen1 {
+    padding: 4.8rem 6.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.screen1 h1{
+    padding: 0 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #34355B;
+    font-weight: bold;
+}
+
+.screen1 p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    padding: 1.4rem 0 2rem 0;
+}
+
+#cookie:hover {
+    animation: Shake 0.5s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+
+
+
+.screen2 {
+    background-color: white;
+    width: 42.4rem;
+    height: 56.4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.6rem 1rem 0.6rem rgba(0, 0, 0, 0.5);
+    padding: 4.8rem 6.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.screen2 h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #34355B;
+    font-weight: bold;
+}
+
+
+.screen2 p {
+    background-color: #E4EDF1;
+    box-shadow: 0 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.3);
+    font-family: "Dancing Script", cursive;
+    font-size: 2.4rem;
+    padding: 1rem;
+    margin: 1.7rem 0 6rem 0;
+    animation: appear 1.2s;
+    transform: translateY(0);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(18rem) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+button {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1.6rem;
+    background-color: #FF9500;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 6rem;
+}
+
+button:hover {
+    background-color: #c0760f;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
